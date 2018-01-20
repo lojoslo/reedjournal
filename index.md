@@ -4,4 +4,6 @@ I've decided to make an attempt at keeping reed and practice journals. If you're
 
 [Developing Consistency: My Practice Journal](http://lojoslo.github.io/reedjournal/practicejournal.pdf)
 
+[Current Daily Practice Regime](http://lojoslo.github.io/reedjournal/Practice.Routine.pdf)
+
 If you have any questions, [email me](<mailto:lslosar@alumni.princeton.edu>).
