@@ -1,0 +1,217 @@
+\documentclass[a4paper,12pt]{memoir}
+%\usepackage{babel}
+\usepackage{csquotes}
+%\usepackage[backend=biber,date=short,maxcitenames=2,style=apa,hyperref]{biblatex}
+\usepackage[pdfusetitle]{hyperref} % Creates hyperlinks and index in the PDF document, preferably load after biblatex
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor   = red %Colour of citations
+}
+%\DeclareLanguageMapping{american}{american-apa}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{textcomp}
+
+% For bibliography (you're probably not going to use this)
+% \addbibresource{NAMEOFBIBFILE}
+
+\title{Developing Consistency: My Practice Journal}
+\author{Louisa Slosar}
+\date{January 19, 2018}
+
+% Sets up 4 cm margins
+\setlrmarginsandblock{3cm}{*}{*}
+\setulmarginsandblock{3cm}{*}{*}
+\checkandfixthelayout
+
+\setlength\midchapskip{10pt}
+\makechapterstyle{VZ23}{
+  \renewcommand\chapternamenum{}
+  \renewcommand\printchaptername{}
+  \renewcommand\chapnumfont{\Huge\bfseries\centering}
+  \renewcommand\chaptitlefont{\Huge\scshape\centering}
+  \renewcommand\afterchapternum{%
+    \par\nobreak\vskip\midchapskip\hrule\vskip\midchapskip}
+  \renewcommand\printchapternonum{%
+    \vphantom{\chapnumfont \thechapter}
+    \par\nobreak\vskip\midchapskip\hrule\vskip\midchapskip}
+}
+\chapterstyle{VZ23}
+
+% Modification of the `headings' page style
+\makeheadrule{headings}{\textwidth}{\normalrulethickness} % Add line under header
+\makeevenhead{headings}{\thepage}{\leftmark}{} % Center even header
+\makeoddhead{headings}{}{\textsc{Developing Consistency: My Practice Journal}}{\thepage} % Center odd header
+\addtopsmarks{headings}{}{
+  \createmark{chapter}{both}{shownumber}{}{. \space} % Remove the word `Chapter' from the header
+}
+\pagestyle{headings} % Activate page style again for changes to take effect
+
+\setlength{\parskip}{0pt} % Remove rubber lengths between paragraphs
+\setlength{\parindent}{0pt}
+
+\setsecheadstyle{\large\bfseries\raggedright}
+\setsubsecheadstyle{\normalsize\em\raggedright}
+
+\sloppybottom
+
+\begin{document}
+
+\frontmatter % Front matter begins
+
+\begin{titlingpage}
+
+\begin{center}
+
+\maketitle
+
+\vspace{15cm}
+
+Last updated \today
+
+\end{center}
+
+\end{titlingpage}
+
+% The * after \tableofcontents prevents it from getting an entry in the TOC
+\tableofcontents*
+
+\listoffigures*
+
+% Main matter begins
+\mainmatter
+
+%\begin{OnehalfSpace} % Use to begin double line spacing
+
+\chapter{January}
+
+\section{19th}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{A001}
+Cane: Rieger \\
+Shape: Rieger 1A \\
+Hardness: 13 \\
+
+Observations:
+\begin{itemize}
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+\end{itemize}
+Hypothesis:
+\begin{itemize}
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+\end{itemize}
+Interventions:
+\begin{itemize}
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+\end{itemize}
+Results:
+\begin{itemize}
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+\end{itemize}
+Discussion: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\\
+
+\subsection{A002}
+Cane: Neuranter \\
+Shape: Herzberg \\
+Hardness: 16 \\
+
+Observations:
+\begin{itemize}
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+\end{itemize}
+Hypothesis:
+\begin{itemize}
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+\end{itemize}
+Interventions:
+\begin{itemize}
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+\end{itemize}
+Results:
+\begin{itemize}
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+\end{itemize}
+Discussion: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\\
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=0.5\columnwidth]{imageindirectory.png} 
+\caption[An example of a figure]{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.} % The text in the square bracket is the caption for the list of figures while the text in the curly brackets is the figure caption
+% \label{fig:gallery} 
+\end{figure}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+\chapter{February}
+
+\section{1st}
+
+Lorem ipsum
+
+\section{2nd}
+
+Lorem ipsum
+
+\section{3rd}
+
+Lorem ipsum
+
+\section{4th}
+
+Lorem ipsum
+
+\section{5th}
+
+Lorem ipsum
+
+\appendix
+
+\chapter{Longitudinal reflections on a subject}
+
+Thoughts on a particular re-occurring concept, which develop over the course of the journal.
+
+\section{Section1}
+
+Lorem ipsum
+
+\section{Section2}
+
+Lorem ipsum
+
+\subsection{subsection1}
+
+Lorem ipsum
+
+\subsection{subsection2}
+
+Lorem ipsum
+
+\subsection{subsection 3}
+
+Lorem ipsum
+
+\chapter{Reflections on another subject}
+
+\section{Section1}
+
+Lorem ipsum
+
+%\end{OnehalfSpace}  % Use to end one and a half line spacing
+
+\backmatter % Back matter begins
+
+% For bibliography
+% \printbibliography
+	
+\end{document}
